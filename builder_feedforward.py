@@ -19,7 +19,7 @@ class NeatForestRoadBuilderFeedForward(NeatForestRoadBuilder):
         path = [(0, 0), (3, 3)]
 
         for _ in range(1, self.road_smoothness):
-            if self.distance(path[-1], (self.screen_width, self.screen_height)) < 50:
+            if self.distance(path[-1], (self.screen_width, self.screen_height)) < 30:
                 break
 
             delta_dest = (

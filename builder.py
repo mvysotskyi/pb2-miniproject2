@@ -14,7 +14,7 @@ class NeatForestRoadBuilder:
     """
     A class that uses NEAT to build a road through a forest.
     """
-    def __init__(self, forest_map: ForestMap, num_generations: int = 100):
+    def __init__(self, forest_map: ForestMap, num_generations: int = 100, config_path: str = "config-feedforward.txt"):
         self.forest_map = forest_map
 
         self.forest_organisms: list = forest_map.organisms
@@ -27,7 +27,7 @@ class NeatForestRoadBuilder:
         self.num_generations = num_generations
         self.config = neat.Config(neat.DefaultGenome, neat.DefaultReproduction,
                                   neat.DefaultSpeciesSet, neat.DefaultStagnation,
-                                  "config-feedforward.txt")
+                                  config_path)
 
     def _build_path(self, net):
         ...
