@@ -24,7 +24,8 @@ python builder_feedworward.py
 
 There are several results of training neural network with NEAT algorithm.
 
-...
+![image info](./screenshots/1.jpg)
+![image info](./screenshots/2.jpg)
 
 ## Participants
 - Olexandr Ivaniuk
